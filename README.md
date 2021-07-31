@@ -23,7 +23,7 @@ Detecting Face\
 The function will detect faces on the image. Next, we must "mark" the faces in the image, using, for example, a blue rectangle. If faces are found, it returns the positions of detected faces as a rectangle with the left up corner (x,y) and having "w" as its Width and "h" as its Height ==> (x,y,w,h). This is done with this portion of the code:
 
 for (x, y, w, h) in faces:\
-    cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)\
+    cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 
 cv2.imshow('img', img)\
 cv2.waitKey()
